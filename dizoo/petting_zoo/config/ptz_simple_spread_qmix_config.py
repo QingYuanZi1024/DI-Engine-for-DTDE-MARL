@@ -1,4 +1,5 @@
 from easydict import EasyDict
+import torch
 
 n_agent = 3
 n_landmark = n_agent
@@ -66,6 +67,7 @@ ptz_simple_spread_qmix_config = main_config
 ptz_simple_spread_qmix_create_config = create_config
 
 if __name__ == '__main__':
+    print(torch.cuda.is_available())
     # or you can enter `ding -m serial -c ptz_simple_spread_qmix_config.py -s 0`
     from ding.entry import serial_pipeline
     serial_pipeline((main_config, create_config), seed=0)
