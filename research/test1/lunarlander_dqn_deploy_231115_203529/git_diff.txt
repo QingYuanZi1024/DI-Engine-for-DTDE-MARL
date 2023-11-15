@@ -1,0 +1,11 @@
+diff --git a/research/test1/dqntest_01.py b/research/test1/dqntest_01.py
+index 5f2d384..4f6e132 100644
+--- a/research/test1/dqntest_01.py
++++ b/research/test1/dqntest_01.py
+@@ -29,4 +29,5 @@ def main(main_config: EasyDict, create_config: EasyDict, ckpt_path: str):
+     print(f'Deploy is finished, final epsiode return is: {returns}')
+ 
+ if __name__ == "__main__":
++    print(torch.cuda.is_available())
+     main(main_config=main_config, create_config=create_config, ckpt_path='./Downloads/final.pth.tar')
+\ No newline at end of file

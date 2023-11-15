@@ -1,0 +1,96 @@
+1e7b746
+
+commit 1e7b7468684ae5388cf4e86818a0343059ac2648
+Author: QingYuanZi1024 <2438771332@qq.com>
+Date:   Wed Nov 15 21:24:25 2023 +0800
+
+    add test
+
+ .../config/ptz_simple_spread_qmix_config.py        |  2 ++
+ research/test1/dqntest_01.py                       | 33 ++++++++++++++++++++++
+ 2 files changed, 35 insertions(+)
+
+commit 043001b179893a83da34445e7fd5f960cd0d3b72
+Author: Super1ce <32703938+Super1ce@users.noreply.github.com>
+Date:   Mon Nov 6 12:51:10 2023 +0800
+
+    polish(zc): change PD config name (#749)
+    
+    * add action
+    
+    * change entry
+
+ ding/policy/plan_diffuser.py                             | 2 +-
+ ding/utils/data/dataset.py                               | 2 ++
+ dizoo/d4rl/config/antmaze_umaze_pd_config.py             | 2 +-
+ dizoo/d4rl/config/halfcheetah_medium_expert_pd_config.py | 2 +-
+ dizoo/d4rl/config/halfcheetah_medium_pd_config.py        | 2 +-
+ dizoo/d4rl/config/hopper_medium_expert_pd_config.py      | 2 +-
+ dizoo/d4rl/config/hopper_medium_pd_config.py             | 2 +-
+ dizoo/d4rl/config/walker2d_medium_expert_pd_config.py    | 2 +-
+ dizoo/d4rl/config/walker2d_medium_pd_config.py           | 2 +-
+ dizoo/d4rl/entry/d4rl_pd_main.py                         | 2 +-
+ 10 files changed, 11 insertions(+), 9 deletions(-)
+
+commit e9a978e706620037c5ab2855ee1b2db5e73d7769
+Author: niuyazhe <niuyazhe@sensetime.com>
+Date:   Wed Nov 1 14:13:58 2023 +0800
+
+    polish(nyz): polish api doc comments problems
+
+ ding/envs/env/ding_env_wrapper.py         |  14 +--
+ ding/envs/env_manager/base_env_manager.py |   6 +-
+ ding/envs/env_wrappers/env_wrappers.py    |   2 +
+ ding/model/common/head.py                 |   1 +
+ ding/model/common/utils.py                |   1 +
+ ding/model/template/__init__.py           |   1 +
+ ding/model/template/acer.py               |  33 +----
+ ding/model/template/maqac.py              | 199 ++++++------------------------
+ ding/model/template/mavac.py              |   9 +-
+ ding/model/template/vae.py                |  17 +--
+ ding/policy/mbpolicy/mbsac.py             |   1 -
+ ding/reward_model/pwil_irl_model.py       |   5 +-
+ ding/rl_utils/td.py                       |   2 -
+ 13 files changed, 68 insertions(+), 223 deletions(-)
+
+commit c5a4be3f42eb7db68caa59f23be6415dedbc3733
+Author: zjowowen <93968541+zjowowen@users.noreply.github.com>
+Date:   Wed Nov 1 12:19:52 2023 +0800
+
+    doc(zjow): polish ding model common/template note (#741)
+    
+    * polish ding.model.template
+    
+    * polish code
+
+ ding/model/common/encoder.py                | 108 +++++-
+ ding/model/common/head.py                   |  95 ++++--
+ ding/model/common/utils.py                  |   9 +-
+ ding/model/template/acer.py                 |  40 +--
+ ding/model/template/atoc.py                 | 204 ++++++++---
+ ding/model/template/bc.py                   |  11 +-
+ ding/model/template/bcq.py                  |  80 ++++-
+ ding/model/template/collaq.py               |  80 ++++-
+ ding/model/template/coma.py                 |  99 +++++-
+ ding/model/template/decision_transformer.py |   8 -
+ ding/model/template/ebm.py                  | 437 +++++++++++++++++++++---
+ ding/model/template/maqac.py                | 503 +++++++++++++++++++---------
+ ding/model/template/ngu.py                  |   2 +-
+ ding/model/template/ppg.py                  |  87 ++++-
+ ding/model/template/q_learning.py           |  68 ++--
+ ding/model/template/qac_dist.py             |  10 +-
+ ding/model/template/vae.py                  |   6 +-
+ 17 files changed, 1447 insertions(+), 400 deletions(-)
+
+commit 439680aba4f612f332958094c1a3d243679a8f4f
+Author: niuyazhe <niuyazhe@sensetime.com>
+Date:   Tue Oct 31 19:15:44 2023 +0800
+
+    fix(nyz): fix unittest bugs
+
+ ding/framework/middleware/tests/test_logger.py   |  2 +-
+ ding/policy/cql.py                               |  4 ++--
+ ding/policy/ppo.py                               |  2 ++
+ ding/policy/tests/test_common_utils.py           | 12 ++----------
+ ding/torch_utils/network/tests/test_diffusion.py | 10 ++++++----
+ 5 files changed, 13 insertions(+), 17 deletions(-)
