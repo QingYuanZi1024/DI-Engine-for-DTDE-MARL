@@ -72,7 +72,7 @@ create_config = dict(
         type='petting_zoo',
     ),
     env_manager=dict(type='subprocess'),
-    policy=dict(type='sac_discrete'),
+    policy=dict(type='discrete_sac'),
 )
 create_config = EasyDict(create_config)
 ptz_simple_spread_masac_config = main_config

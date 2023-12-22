@@ -32,7 +32,7 @@ class BaseLearner(object):
         return cfg
 
     config = dict(
-        train_iterations=int(1e9),
+        train_iterations=int(1e5),
         dataloader=dict(num_workers=0, ),
         log_policy=True,
         # --- Hooks ---

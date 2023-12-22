@@ -32,7 +32,7 @@ main_config = dict(
         ),
         learn=dict(
             update_per_collect=100,
-            batch_size=32,
+            batch_size=16,
             learning_rate=0.0005,
             target_update_theta=0.001,
             discount_factor=0.99,

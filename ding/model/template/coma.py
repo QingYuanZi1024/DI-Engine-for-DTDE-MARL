@@ -122,7 +122,7 @@ class COMACriticNetwork(nn.Module):
             forward computation graph of qmix network
         Arguments:
             - data (:obj:`dict`): input data dict with keys ['obs', 'prev_state', 'action']
-            - agent_state (:obj:`torch.Tensor`): each agent local state(obs)
+            - gent_state (:obj:`torch.Tensor`): each agent local state(obs)a
             - global_state (:obj:`torch.Tensor`): global state(obs)
             - action (:obj:`torch.Tensor`): the masked action
         ArgumentsKeys:
