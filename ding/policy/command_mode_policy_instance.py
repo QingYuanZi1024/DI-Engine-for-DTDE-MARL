@@ -37,6 +37,7 @@ from .qtran import QTRANPolicy
 from .sql import SQLPolicy
 from .bc import BehaviourCloningPolicy
 from .ibc import IBCPolicy
+from .ciallo import CIALLOPolicy
 
 from .dqfd import DQFDPolicy
 from .r2d3 import R2D3Policy
@@ -402,6 +403,10 @@ class EDACCommandModelPolicy(EDACPolicy, DummyCommandModePolicy):
 
 @POLICY_REGISTRY.register('pd_command')
 class PDCommandModelPolicy(PDPolicy, DummyCommandModePolicy):
+    pass
+
+@POLICY_REGISTRY.register('ciallo_command')
+class CIALLOCommandModePolicy(CIALLOPolicy, EpsCommandModePolicy):
     pass
 
 
